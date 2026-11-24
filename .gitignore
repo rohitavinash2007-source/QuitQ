@@ -6,6 +6,7 @@ dist/
 build/
 bin/
 obj/
+publish/
 
 # Visual Studio & VS Code
 .vs/

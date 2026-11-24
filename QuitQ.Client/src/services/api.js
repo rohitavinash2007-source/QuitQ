@@ -1,6 +1,6 @@
 // API Client for QuitQ Fullstack Application
-// Automatically routes through Vite proxy (/api -> http://localhost:5000/api)
-const BASE_URL = '/api';
+// Supports cloud backend via VITE_API_URL or local Vite proxy (/api -> http://localhost:5000/api)
+const BASE_URL = import.meta.env.VITE_API_URL || '/api';
 
 // Initial Mock Dataset for Offline/Evaluation resilience
 const INITIAL_PRODUCTS = [
